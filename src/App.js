@@ -54,7 +54,7 @@ function App() {
                     </div>
 
                     <div className='row'>
-                        {getDetails ? <>
+                        {!loading && getDetails ? <>
                             <Userdetails
                                 getDetails={getDetails}
                                 setGetDetails={setGetDetails}
