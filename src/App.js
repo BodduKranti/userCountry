@@ -9,7 +9,7 @@ function App() {
     const [inputUser, setInputUser] = useState('');
     const [getDetails, setGetDetails] = useState([]);
     const [loading, setLoading] = useState(false)
-    const [keys,setKeys]=useState(0)
+
 
     const userDetailsfun = async (e) => {
         e.preventDefault();
@@ -58,7 +58,6 @@ function App() {
                             <Userdetails
                                 getDetails={getDetails}
                                 setGetDetails={setGetDetails}
-                                keys={keys}
                             />
                         </> : <>
                             ...loading
